@@ -1,4 +1,4 @@
-FROM node:12.4.0-alpine as nodejs_debug
+FROM node:12.4.0-alpine as api_debug
 
 WORKDIR /work/
 
@@ -12,7 +12,7 @@ COPY ./src/ /work/src/
 # ENTRYPOINT [ "nodemon","--config","nodemon.json","--inspect=0.0.0.0","./src/server.ts" ]
 ENTRYPOINT [ "nodemon","--inspect=0.0.0.0","./src/server.ts" ]
 
-# FROM node:12.4.0-alpine as nodejs_prod
+# FROM node:12.4.0-alpine as api_prod
 
 # WORKDIR /work/
 # COPY ./package.json /work/package.json

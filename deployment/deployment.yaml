@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: example-app
-          image: ama/nodejs:v1
+          image: ama/api:v1
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
