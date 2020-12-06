@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Docker: NodeJs",
+            "type": "node",
+            "request": "attach",
+            "remoteRoot": "/work/src/",
+            "port": 9229,
+            "address": "localhost",
+            "localRoot": "${workspaceFolder}/nodejs/src/",
+            "protocol": "inspector",
+            "restart": true,
+            "sourceMaps": true,
+        },         
+        {
+            "name": "Docker: Web React Chrome",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceRoot}/web/src",
+            "sourceMaps": true,
+            "sourceMapPathOverrides": {
+                "/app/src/*": "${webRoot}/*",
+                "webpack:///./src/*": "${webRoot}/*"
+            },
+            "runtimeArgs": [
+                "--remote-debugging-port=9222"
+            ],
+            "userDataDir": "${workspaceRoot}/.vscode/chrome",          
+        }
+    ]
+}

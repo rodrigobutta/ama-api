@@ -1,0 +1,13 @@
+//.gitignore
+
+node_modules
+package-lock.json
+build
+
+
+# macOS
+.DS_Store
+
+# VCODE Debugger Lauch
+.vscode
+!.vscode/launch.json

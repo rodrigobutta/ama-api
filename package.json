@@ -1,0 +1,62 @@
+{
+  "name": "ama-server",
+  "version": "1.0.0",
+  "description": "Vegan Final App",
+  "author": "Rodrigo Butta <rbutta@gmail.com>",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigobutta/ama.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodrigobutta/ama/issues"
+  },
+  "homepage": "https://github.com/rodrigobutta/ama#readme",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "mocha"
+  },
+  "nodemonConfig": {
+    "execMap": {
+      "ts": "node --require ts-node/register/transpile-only"
+    }
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "joi": "^17.3.0",
+    "mongoose": "^5.11.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "uuid": "^8.3.1"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/body-parser": "^1.19.0",
+    "@types/cors": "^2.8.8",
+    "@types/express": "^4.17.9",
+    "@types/hapi__joi": "^17.1.6",
+    "@types/mongoose": "^5.10.2",
+    "@types/morgan": "^1.9.2",
+    "@types/multer": "^1.4.4",
+    "@types/node": "^14.14.10",
+    "@types/passport": "^1.0.4",
+    "@types/passport-jwt": "^3.0.3",
+    "@types/passport-local": "^1.0.33",
+    "@types/uuid": "^8.3.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "chai-json": "^1.0.0",
+    "eslint-config-prettier": "^6.15.0",
+    "mocha": "^8.2.1",
+    "nodemon": "^2.0.6",
+    "prettier": "2.2.1",
+    "ts-node": "^9.1.0",
+    "typescript": "^4.1.2"
+  }
+}
