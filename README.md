@@ -9,6 +9,9 @@ NodeJs, Express
 ### Run
 `fig up api`
 
+### Test Run
+http://0.0.0.0:5002/
+
 ### Debug
 
 #### VSCODE Docker
